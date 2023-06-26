@@ -50,7 +50,7 @@ const Section1 = () => {
           className="z-20 font-[400] sm:text-[1.5rem]"
           variants={fadeInRight}
         >
-          Fashionify focuses on fashionable and sustainable clothing with an
+          Adornare Luxury focuses on fashionable and sustainable clothing with an
           affordable price tag. We are currently working with 2 different
           suppliers from Europe to provide incredible quality.
         </motion.h3>
@@ -123,7 +123,7 @@ const Section2 = () => {
               We love all things new and get as much of a buzz out of constantly
               updating our products as our customers do buying them. And with 50
               new products uploaded online every month, we make sure that each
-              time our customers visit Fashionify there’s something new to
+              time our customers visit Adornare Luxury there’s something new to
               excite them.
             </span>
           </div>

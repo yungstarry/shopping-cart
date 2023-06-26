@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="form-control w-60 sm:w-80">
             <label className="label">
               <span className="label-text">
-                Get your weekly Fashionify newsletter straight to your mailbox.
+                Get your weekly Adornare Luxury newsletter straight to your mailbox.
               </span>
             </label>
             <div className="relative">
