@@ -137,11 +137,13 @@ const HeadNavbar = ({amountInCart}) => {
               </li>
               <li>
                 <Link
-                  to="/shopping-cartF"
+                  to="/shopping-cart"
                   onClick={closeMobileMenu}
                   className="block text-white text-opacity-90 text-sm px-4 py-3 relative bg-black bg-opacity-90 transition-all duration-600 ease-in-out hover:bg-gray-900 hover:text-blue-700"
                 >
                   <FontAwesomeIcon icon={faCartShopping} />
+                  {amountInCart > 0 && <p>{amountInCart}</p>}
+                  {amountInCart >= 100 && <p>{"++"}</p>}
                 </Link>
               </li>
             </ul>
