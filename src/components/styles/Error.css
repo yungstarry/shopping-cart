@@ -1,0 +1,48 @@
+.error-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.error-page h1,
+.error-page h2,
+.error-page p {
+  margin: 0;
+}
+
+.error-page h1 {
+  font-size: 8rem;
+}
+
+.error-page h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.error-page p {
+  font-size: 0.5rem;
+}
+
+.error-page p:nth-of-type(2n) {
+  margin-bottom: 1rem;
+}
+
+.error-page a {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  background: #ff613a;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: 400ms;
+}
+
+.error-page a:hover {
+  background: #ff896c;
+}

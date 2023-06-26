@@ -1,0 +1,230 @@
+.shopping-cart {
+  height: auto;
+  max-width: 30rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 3rem 0rem;
+}
+
+.shopping-cart .empty-cart {
+  box-sizing: border-box;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 5rem;
+  gap: 1rem;
+  box-shadow: #0000002f 0 5px 5px;
+}
+
+.shopping-cart .empty-cart p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.shopping-cart .empty-cart a {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  background: #ff613a;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: 400ms;
+}
+
+.shopping-cart .empty-cart a:hover {
+  background: #ff896c;
+}
+
+.shopping-cart h1 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.shopping-cart a {
+  text-decoration: none;
+  color: black;
+}
+
+.shopping-cart ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  margin: 0;
+}
+
+.shopping-cart ul li {
+  box-shadow: #0000002f 0 5px 5px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  display: flex;
+  width: 100%;
+  min-height: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #f7f7f7;
+  font-weight: 200;
+}
+
+.shopping-cart ul li .description {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  flex: 1;
+}
+
+.shopping-cart ul li img {
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+.shopping-cart ul li .add-and-remove {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  border: black solid 1px;
+  height: 2rem;
+  width: 5rem;
+  box-sizing: border-box;
+}
+
+.shopping-cart ul li .add-and-remove button {
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.shopping-cart ul li .add-and-remove button:hover {
+  color: #ff613a;
+}
+
+.shopping-cart ul li p {
+  margin: 0;
+}
+
+.shopping-cart ul li .name {
+  max-width: 12rem;
+}
+
+.shopping-cart ul li .size {
+  font-weight: 400;
+}
+
+.shopping-cart ul li .delete {
+  display: flex;
+  gap: 0.2rem;
+  background: none;
+  font-weight: 100;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.shopping-cart .total-price,
+.shopping-cart .payment-method {
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  min-height: 10rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: #0000002f 0 5px 5px;
+}
+
+.shopping-cart .total-price p,
+.shopping-cart .total-price h3 {
+  margin: 0;
+}
+
+.shopping-cart .total-price h3 {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.shopping-cart .total-price .sub-total,
+.shopping-cart .total-price .shipping,
+.shopping-cart .total-price .total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopping-cart .total-price .shipping {
+  border-bottom: solid 1px rgb(182, 182, 182);
+  padding-bottom: 0.5rem;
+}
+
+.shopping-cart .total-price .total {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.shopping-cart .total-price a {
+  background: #ff613a;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  transition: 300ms;
+  cursor: pointer;
+  width: 100%;
+}
+
+.shopping-cart .total-price a:hover {
+  background: #ff8567;
+}
+
+.shopping-cart .payment-method {
+  justify-items: flex-start;
+  align-items: flex-start;
+  min-height: auto;
+}
+
+.shopping-cart .payment-method img {
+  height: 2rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .shopping-cart {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .shopping-cart {
+    padding: 1rem;
+  }
+  .shopping-cart ul li {
+    gap: 1rem;
+    min-width: 0;
+  }
+}
